@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="description" content="Конвертуйте JSON в Excel таблицю і навпаки. Завантажуйте файли та експортуйте дані в зручному форматі. Легкий інтерфейс для роботи з таблицями.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Конвертуйте JSON в Excel таблицю і навпаки. Завантажуйте файли та експортуйте дані в зручному форматі. Легкий інтерфейс для роботи з таблицями.">
     <meta name="keywords" content="JSON, Excel, конвертер, таблиця, експорт, імпорт, веб-застосунок">
     <meta name="author" content="Андрій Панасюк">
     <meta property="og:title" content="JSON2Excel">
-    <meta property="og:description" content="Легко конвертуйте JSON в Excel таблицю і навпаки, завантажуйте файли і експортуйте дані.">
+    <meta property="og:description"
+        content="Легко конвертуйте JSON в Excel таблицю і навпаки, завантажуйте файли і експортуйте дані.">
     <meta property="og:image" content="URL_до_вашого_логотипа_або_зображення_для_огляду">
     <meta property="og:url" content="URL_вашого_проекту">
     <meta property="og:type" content="website">
@@ -19,21 +21,20 @@
     <meta name="twitter:image" content="URL_до_вашого_зображення_для_Твіттера">
     <meta name="robots" content="index, follow">
     <title>JSON2Excel</title>
-    
-    <!-- Фавікон -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+
     <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+
     <link rel="manifest" href="./favicons/site.webmanifest">
     <link rel="icon" type="image/png" sizes="192x192" href="./favicons/android-chrome-192x192.png">
     <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    
-    <!-- Скрипти -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <style>
         html {
             scroll-behavior: smooth;
@@ -47,7 +48,6 @@
 
 
 <body class="bg-gray-50">
-    <!-- Hero Section -->
     <section
         class="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600 text-white h-[700px] flex flex-col justify-center items-center text-center py-24">
         <div class="max-w-3xl mx-auto px-6">
@@ -78,9 +78,6 @@
         </div>
     </section>
 
-
-
-    <!-- Main Content Section -->
     <section id="main" class="max-w-6xl mx-auto py-16 px-6">
         <div class="text-center mb-10">
             <h2 class="text-3xl font-semibold text-gray-800">Як це працює</h2>
@@ -119,7 +116,6 @@
 
         <div id="output" class="mt-10"></div>
 
-        <!-- Download Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 mt-8">
             <button onclick="exportToExcel()"
                 class="w-full sm:w-auto bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-all">Експортувати
@@ -128,33 +124,28 @@
                 class="w-full sm:w-auto bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-all">Завантажити
                 JSON</button>
         </div>
-
-
     </section>
 
-
-    <!-- Footer Section -->
     <footer class="bg-gray-800 text-white py-12 mt-16">
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                <!-- Left Column -->
                 <div class="text-left">
                     <h3 class="text-2xl font-semibold mb-4">Дякую за відвідування!</h3>
                     <p class="text-lg text-gray-300">Сподіваюся, ви знайшли корисні інструменти для вашої роботи.</p>
                 </div>
 
-                <!-- Middle Column -->
                 <div class="text-left text-center">
                     <h3 class="text-2xl font-semibold mb-4">Мої Ресурси</h3>
                     <ul class="space-y-4">
-                        <li><a href="https://github.com/yourusername" target="_blank"
+                        <li><a href="https://github.com/andreyk1n" target="_blank"
                                 class="text-gray-300 hover:text-white transition-all">Мій GitHub</a></li>
-                        <li><a href="https://yourportfolio.com" target="_blank"
+                        <li><a href="https://www.linkedin.com/in/andrii-panasiuk-61786029a/" target="_blank"
+                                class="text-gray-300 hover:text-white transition-all">Мій Linkedin</a></li>
+                        <li><a href="https://andreyk1n.github.io/My-portfolio/" target="_blank"
                                 class="text-gray-300 hover:text-white transition-all">Моє Портфоліо</a></li>
                     </ul>
                 </div>
 
-                <!-- Right Column -->
                 <div class="text-left text-right sm:text-left">
                     <blockquote class="italic text-lg text-gray-300 mb-4">"Ваша праця — це ваша гордість!"</blockquote>
                     <p class="text-lg text-gray-300">Дякую за використання моїх інструментів. Бажаю вдалого дня та
@@ -162,12 +153,30 @@
                 </div>
             </div>
 
-            <!-- Copyright Section -->
             <div class="border-t border-gray-600 mt-12 pt-6 text-center sm:text-left">
                 <p class="text-sm text-gray-400 text-center">&copy; 2025 Зроблено з любов'ю для вас.</p>
             </div>
         </div>
     </footer>
+
+    <a href="index-en.html" class="fixed right-8 bottom-8 bg-white border-2 border-gray-300 p-3 rounded-full shadow-lg transition-all duration-300 hover:bg-gray-100 hover:scale-110">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+            <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#071b65"></rect>
+            <path d="M5.101,4h-.101c-1.981,0-3.615,1.444-3.933,3.334L26.899,28h.101c1.981,0,3.615-1.444,3.933-3.334L5.101,4Z" fill="#fff"></path>
+            <path d="M22.25,19h-2.5l9.934,7.947c.387-.353,.704-.777,.929-1.257l-8.363-6.691Z" fill="#b92932"></path>
+            <path d="M1.387,6.309l8.363,6.691h2.5L2.316,5.053c-.387,.353-.704,.777-.929,1.257Z" fill="#b92932"></path>
+            <path d="M5,28h.101L30.933,7.334c-.318-1.891-1.952-3.334-3.933-3.334h-.101L1.067,24.666c.318,1.891,1.952,3.334,3.933,3.334Z" fill="#fff"></path>
+            <rect x="13" y="4" width="6" height="24" fill="#fff"></rect>
+            <rect x="1" y="13" width="30" height="6" fill="#fff"></rect>
+            <rect x="14" y="4" width="4" height="24" fill="#b92932"></rect>
+            <rect x="14" y="1" width="4" height="30" transform="translate(32) rotate(90)" fill="#b92932"></rect>
+            <path d="M28.222,4.21l-9.222,7.376v1.414h.75l9.943-7.94c-.419-.384-.918-.671-1.471-.85Z" fill="#b92932"></path>
+            <path d="M2.328,26.957c.414,.374,.904,.656,1.447,.832l9.225-7.38v-1.408h-.75L2.328,26.957Z" fill="#b92932"></path>
+            <path d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z" opacity=".15"></path>
+            <path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path>
+        </svg>
+    </a>
+    
 
     <script src="./script.js"></script>
 </body>
